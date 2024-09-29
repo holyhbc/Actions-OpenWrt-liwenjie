@@ -35,9 +35,9 @@ on:
     paths:
       - '.github/workflows/build-openwrt-360t7.yml'
       - '360-t7-108M.config'
-      
+#https://github.com/padavanonly/immortalwrtARM      
 env:
-  REPO_URL: https://github.com/padavanonly/immortalwrtARM
+  REPO_URL:  https://github.com/holyhbc/immortalwrtARM  
   REPO_BRANCH: openwrt-21.02
   FEEDS_CONF: feeds.conf.default-360-t7-108M
   DIY_P1_SH: diy-360-t7-108M.sh
