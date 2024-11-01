@@ -18,9 +18,9 @@ on:
         description: 'SSH connection to Actions'
         required: true
         default: 'true'
-      devices:
-        description: 'build devices'
-        default: '["360-t7-108M"]'
+      #devices:
+      #  description: 'build devices'
+      #  default: '["360-t7-108M"]'
       clean:
         description: 'clean ccache'
         default: 'false'
