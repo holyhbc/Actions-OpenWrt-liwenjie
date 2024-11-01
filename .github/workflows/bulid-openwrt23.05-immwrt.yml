@@ -14,10 +14,10 @@ on:
   repository_dispatch:
   workflow_dispatch:
     inputs:
-      ssh:
-        description: 'SSH connection to Actions'
-        required: true
-        default: 'true'
+      #ssh:
+        #description: 'SSH connection to Actions'
+        #required: true
+        #default: 'true'
       #devices:
       #  description: 'build devices'
       #  default: '["360-t7-108M"]'
@@ -33,8 +33,8 @@ on:
     branches:
       - main
     paths:
-      - '.github/workflows/build-openwrt-immortalwrt.yml'
-      - '360-t7-108M.config'
+      - '.github/workflows/bulid-openwrt23.05-immwrt.yml'
+      - '360t7-op2305-imm.config'
 #https://github.com/padavanonly/immortalwrtARM      
 env:
   REPO_URL:  https://github.com/immortalwrt/immortalwrt
