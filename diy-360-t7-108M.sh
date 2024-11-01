@@ -14,7 +14,7 @@
 #sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default
 
 # Add a feed source
-git clone https://github.com/kongfl888/luci-app-adguardhome package/myapp/luci-app-adguardhome
-git clone https://github.com/yaof2/luci-app-ikoolproxy package/myapp/luci-app-ikoolproxy
+# git clone https://github.com/kongfl888/luci-app-adguardhome package/myapp/luci-app-adguardhome
+# git clone https://github.com/yaof2/luci-app-ikoolproxy package/myapp/luci-app-ikoolproxy
 
 
