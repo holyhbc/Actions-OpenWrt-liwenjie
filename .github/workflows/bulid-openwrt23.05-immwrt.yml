@@ -18,9 +18,9 @@ on:
         #description: 'SSH connection to Actions'
         #required: true
         #default: 'true'
-      #devices:
-      #  description: 'build devices'
-      #  default: '["360-t7-108M"]'
+      devices:
+        description: 'build devices'
+        default: '["360t7-op2305-imm.config"]'
       clean:
         description: 'clean ccache'
         default: 'false'
@@ -137,8 +137,8 @@ jobs:
     - name: Load custom configuration
       run: |
         [ -e files ] && mv files openwrt/files
-        #[ -e ${{matrix.device}}.config ] && mv ${{matrix.device}}.config openwrt/.config
-        [ -e $CONFIG_FILE ] && mv $CONFIG_FILE openwrt/.config
+        [ -e ${{matrix.device}}.config ] && mv ${{matrix.device}}.config openwrt/.config
+        #[ -e $CONFIG_FILE ] && mv $CONFIG_FILE openwrt/.config
         
         chmod +x $DIY_P2_SH
         cd openwrt
