@@ -14,10 +14,10 @@ on:
   repository_dispatch:
   workflow_dispatch:
     inputs:
-      #ssh:
-        #description: 'SSH connection to Actions'
-        #required: true
-        #default: 'true'
+      ssh:
+        description: 'SSH connection to Actions'
+        required: true
+        default: 'true'
       devices:
         description: 'build devices'
         default: '["360t7-op2305-imm.config"]'
